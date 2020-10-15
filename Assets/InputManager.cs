@@ -20,4 +20,5 @@ public class InputManager : MonoBehaviour
 
     public bool Right;
     public bool Left;
+    public bool Jump;
 }

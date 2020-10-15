@@ -32,6 +32,15 @@ public class Controls : MonoBehaviour
             {
                 InputManager.Instance.Left = false;
             }
+
+            if (Input.GetKey(KeyCode.Space))
+            {
+                InputManager.Instance.Jump = true;
+            }
+            else
+            {
+                InputManager.Instance.Jump = false;
+            }
         }
     }
 }
