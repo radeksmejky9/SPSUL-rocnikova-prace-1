@@ -34,7 +34,6 @@ public class GroundDetection : StateData
 
     bool IsGrounded(CharacterControl control)
     {
-
         if (control.RIGID_BODY.velocity.y > -0.01f && control.RIGID_BODY.velocity.y < 0.01f)
         {
             return true;
