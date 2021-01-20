@@ -58,10 +58,11 @@
     <Compile Include="Assets\ScriptsForScriptableObjects\InAirMove.cs" />
     <Compile Include="Assets\ScriptsForScriptableObjects\Run.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
-    <Compile Include="Assets\FinishLevel.cs" />
+    <Compile Include="Assets\Scripts\FinishLevel.cs" />
     <Compile Include="Assets\Controls\CharacterControl.cs" />
     <Compile Include="Assets\ScriptsForScriptableObjects\ForceTransition.cs" />
     <Compile Include="Assets\ScriptsForScriptableObjects\Idle.cs" />
+    <Compile Include="Assets\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\ScriptsForScriptableObjects\GroundDetection.cs" />
     <Compile Include="Assets\Scripts\Levels.cs" />
     <Compile Include="Assets\ScriptsForScriptableObjects\Jump.cs" />
@@ -73,7 +74,6 @@
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Controls\ManualInput.cs" />
     <Compile Include="Assets\Controls\Controls.cs" />
-    <Compile Include="Assets\Scripts\SettingsMenu.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
