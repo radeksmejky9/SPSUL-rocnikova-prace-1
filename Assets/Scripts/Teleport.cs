@@ -2,10 +2,12 @@
 
 public class Teleport : MonoBehaviour
 {
-    public Transform teleportTarget;
-    public GameObject Player;
+    public GameObject player;
+    public GameObject checkpoint;
+
     private void OnTriggerEnter(Collider other)
     {
-        Player.transform.position = teleportTarget.transform.position;
+        player.transform.position = checkpoint.transform.position;
+
     }
 }

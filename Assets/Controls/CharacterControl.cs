@@ -67,7 +67,7 @@ public class CharacterControl : MonoBehaviour
 
         float sectionFront = (topFront.transform.position - bottomFront.transform.position).magnitude / 50f;
 
-        for (int i = 0; i < 49; i++)
+        for (int i = 3; i < 40; i++)
         {
             Vector3 pos = bottomFront.transform.position + (Vector3.up * sectionFront * (i + 1));
             GameObject obj = CreateEdgeCollider(pos);
