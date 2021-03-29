@@ -7,7 +7,11 @@ public class Teleport : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        player.transform.position = checkpoint.transform.position;
+        if (other.gameObject.transform.root.gameObject == player)
+        {
+            player.transform.position = checkpoint.transform.position;
+            player.GetComponent<DamageDetector>().TakeDamage(25);
+        }
 
     }
 }

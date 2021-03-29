@@ -59,25 +59,28 @@
     <Compile Include="Assets\ScriptsForScriptableObjects\Run.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\FinishLevel.cs" />
+    <Compile Include="Assets\EnemyDamageDetector.cs" />
     <Compile Include="Assets\Controls\CharacterControl.cs" />
     <Compile Include="Assets\ScriptsForScriptableObjects\ForceTransition.cs" />
     <Compile Include="Assets\ScriptsForScriptableObjects\Idle.cs" />
+    <Compile Include="Assets\AIMelee.cs" />
     <Compile Include="Assets\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\ScriptsForScriptableObjects\GroundDetection.cs" />
     <Compile Include="Assets\Scripts\Levels.cs" />
     <Compile Include="Assets\ScriptsForScriptableObjects\Jump.cs" />
     <Compile Include="Assets\Scripts\Teleport.cs" />
-    <Compile Include="Assets\Spike.cs" />
+    <Compile Include="Assets\Scripts\Spike.cs" />
     <Compile Include="Assets\Controls\InputManager.cs" />
     <Compile Include="Assets\CharacterStates\CharacterState.cs" />
+    <Compile Include="Assets\Scripts\Checkpoint.cs" />
     <Compile Include="Assets\ScriptsForScriptableObjects\Land.cs" />
     <Compile Include="Assets\CharacterStates\StateData.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Controls\ManualInput.cs" />
-    <Compile Include="Assets\SpikeTraps.cs" />
+    <Compile Include="Assets\Scripts\SpikeTraps.cs" />
     <Compile Include="Assets\Controls\Controls.cs" />
     <Compile Include="Assets\Scripts\DamageDetector.cs" />
-    <Compile Include="Assets\Scripts\Checkpoint.cs" />
+    <Compile Include="Assets\AIRanged.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -651,6 +654,10 @@
       <Project>{10DF2685-BB9E-D7B6-D2C3-2A26DF107D69}</Project>
       <Name>Cinemachine</Name>
     </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
+      <Project>{48E72814-510E-005D-8E91-5402EE476D9B}</Project>
+      <Name>NavMeshComponentsExamplesEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Shaders.csproj">
       <Project>{4D305B29-8EE6-9813-7C3D-3CC47880EE3E}</Project>
       <Name>Unity.RenderPipelines.Universal.Shaders</Name>
@@ -670,6 +677,10 @@
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{B1E8F282-C457-8E68-36A4-FB1B76C2D5D4}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{73437395-9FDA-F3B2-A392-D1FB2218AD35}</Project>
+      <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Runtime.csproj">
       <Project>{E697189F-0691-29B8-F0F3-6C4E9FFF8780}</Project>
@@ -694,6 +705,14 @@
     <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
       <Project>{093FD8BE-C3F4-75B4-0F6F-1C627B3944A5}</Project>
       <Name>Unity.Postprocessing.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{9B2F4E17-64B9-E28B-23C4-0FD1589674C5}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamples.csproj">
+      <Project>{44961B8F-CCE4-B57E-57EF-9B7A2357FE7B}</Project>
+      <Name>NavMeshComponentsExamples</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
       <Project>{ACFC80B1-DB0A-B482-9116-518934059960}</Project>
