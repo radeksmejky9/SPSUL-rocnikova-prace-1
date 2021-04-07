@@ -79,8 +79,9 @@
     <Compile Include="Assets\Controls\ManualInput.cs" />
     <Compile Include="Assets\Scripts\SpikeTraps.cs" />
     <Compile Include="Assets\Controls\Controls.cs" />
-    <Compile Include="Assets\Scripts\DamageDetector.cs" />
     <Compile Include="Assets\AIRanged.cs" />
+    <Compile Include="Assets\Scripts\DamageDetector.cs" />
+    <Compile Include="Assets\WeaponProjectile.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
