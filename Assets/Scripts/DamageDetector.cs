@@ -22,8 +22,8 @@ public class DamageDetector : MonoBehaviour
         if (this.hp < 0 && control.animator.GetBool("Dead") == false)
         {
             control.animator.SetBool("Dead", true);
-            this.gameObject.transform.root.gameObject.GetComponent<BoxCollider>().size = new Vector3(0.82f, 0.01f, 1f);
-
+            this.gameObject.transform.root.gameObject.GetComponent<BoxCollider>().size = new Vector3(0.03682822f, 0.01f, 0.05451269f);
+            this.gameObject.transform.root.gameObject.GetComponent<BoxCollider>().center = new Vector3(0.82f, 0.01f, 1f);
         }
     }
 
@@ -33,7 +33,8 @@ public class DamageDetector : MonoBehaviour
         if (this.hp - amount <= 0)
         {
             control.animator.SetBool("Dead", true);
-            this.gameObject.transform.root.gameObject.GetComponent<BoxCollider>().size = new Vector3(0.82f, 0.01f, 1f);
+            this.gameObject.transform.root.gameObject.GetComponent<BoxCollider>().size = new Vector3(0.03682822f, 0.01f, 0.05451269f);
+            this.gameObject.transform.root.gameObject.GetComponent<BoxCollider>().center = new Vector3(0.82f, 0.01f, 1f);
 
             // SceneManager.LoadScene(0);
         }
