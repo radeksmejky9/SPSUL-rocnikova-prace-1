@@ -19,7 +19,19 @@ public class Jump : StateData
 
     public override void UpdateAbility(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
     {
-
+        CharacterControl characterControl = characterState.GetCharacterControl(animator);
+        if (characterControl.Shoot)
+        {
+            animator.SetBool("Shoot", true);
+        }
+        if (characterControl.Shift)
+        {
+            animator.SetBool("Shift", true);
+        }
+        else
+        {
+            animator.SetBool("Shift", false);
+        }
     }
 
 

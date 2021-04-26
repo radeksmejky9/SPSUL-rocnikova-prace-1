@@ -39,22 +39,29 @@ public class Idle : StateData
             }
         }
 
-
-        bool FrontCheck(CharacterControl control)
+        if (characterControl.Shift)
         {
-            foreach (GameObject o in control.FrontColliders)
-            {
-                Debug.DrawRay(o.transform.position, control.transform.forward * 0.7f, Color.red);
-                RaycastHit hit;
-                if (Physics.Raycast(o.transform.position, control.transform.forward, out hit, 0.1f))
-                {
-                    return true;
-                }
-            }
-            return false;
+            animator.SetBool("Shift", true);
         }
-
+        if (characterControl.Shoot)
+        {
+            animator.SetBool("Shoot", true);
+        }
     }
 
+
+    bool FrontCheck(CharacterControl control)
+    {
+        foreach (GameObject o in control.FrontColliders)
+        {
+            Debug.DrawRay(o.transform.position, control.transform.forward * 0.7f, Color.red);
+            RaycastHit hit;
+            if (Physics.Raycast(o.transform.position, control.transform.forward, out hit, 0.1f))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
 }

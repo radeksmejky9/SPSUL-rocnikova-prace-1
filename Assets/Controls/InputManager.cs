@@ -3,4 +3,6 @@
     public bool Right;
     public bool Left;
     public bool Jump;
+    public bool Shift;
+    public bool Shoot;
 }

@@ -40,5 +40,22 @@ public class ManualInput : MonoBehaviour
         {
             characterControl.Jump = false;
         }
+
+        if (InputManager.Instance.Shift)
+        {
+            characterControl.Shift = true;
+        }
+        else
+        {
+            characterControl.Shift = false;
+        }
+        if (InputManager.Instance.Shoot)
+        {
+            characterControl.Shoot = true;
+        }
+        else
+        {
+            characterControl.Shoot = false;
+        }
     }
 }
