@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyDamageDetector : MonoBehaviour
 {
     CharacterControl control;
     [SerializeField]
     public float hp;
+    public GameObject gun;
 
     private void Awake()
     {
@@ -14,13 +16,6 @@ public class EnemyDamageDetector : MonoBehaviour
     private void Update()
     {
 
-        if (this.hp <= 0 && control.animator.GetBool("Dead") == false)
-        {
-            control.animator.SetBool("Dead", true);
-            this.gameObject.transform.root.gameObject.GetComponent<BoxCollider>().isTrigger = true;
-            this.gameObject.transform.root.gameObject.GetComponent<Rigidbody>().freezeRotation = true;
-
-        }
     }
 
 
@@ -29,12 +24,13 @@ public class EnemyDamageDetector : MonoBehaviour
         if (this.hp - amount <= 0)
         {
             control.animator.SetBool("Dead", true);
-            this.gameObject.transform.root.gameObject.GetComponent<BoxCollider>().isTrigger = true;
-            this.gameObject.transform.root.gameObject.GetComponent<Rigidbody>().freezeRotation = true;
+            Destroy(gameObject.transform.root.gameObject.GetComponent<BoxCollider>());
+            gameObject.GetComponent<NavMeshAgent>().enabled = false;
         }
         else
         {
             this.hp -= amount;
         }
     }
+
 }

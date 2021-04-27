@@ -30,7 +30,7 @@ public class AIRanged : MonoBehaviour
 
     private void Update()
     {
-        if (!gameObject.GetComponent<Animator>().GetBool("Dead") && player.GetComponent<DamageDetector>().hp > 0)
+        if ((!gameObject.GetComponent<Animator>().GetBool("Dead")) && player.GetComponent<DamageDetector>().hp > 0)
         {
 
             if (lastframe == 0)
@@ -58,24 +58,16 @@ public class AIRanged : MonoBehaviour
 
             if (playerInSightRange && playerInAttackRange)
             {
-                Attacking();
                 gameObject.GetComponent<Animator>().SetBool("Shoot", true);
+                Attacking();
             }
-            else
-            {
-                gameObject.GetComponent<Animator>().SetBool("Shoot", false);
-            }
+
             if (playerInSightRange && !playerInAttackRange)
             {
-                Chasing();
                 gameObject.GetComponent<Animator>().SetBool("Run", true);
+                Chasing();
             }
-            else
-            {
-                gameObject.GetComponent<Animator>().SetBool("Run", false);
-                gameObject.GetComponent<Animator>().SetBool("Shoot", false);
 
-            }
 
 
         }
@@ -106,7 +98,9 @@ public class AIRanged : MonoBehaviour
         {
             if (!alreadyAttacked)
             {
-                Vector3 t = new Vector3(transform.position.x, transform.position.y + 0.9f, transform.position.z);
+                GameObject gun = gameObject.GetComponent<EnemyDamageDetector>().gun;
+
+                Vector3 t = new Vector3(gun.transform.position.x, gun.transform.position.y, gun.transform.position.z);
                 Rigidbody rb = Instantiate(projectile, t, Quaternion.identity).GetComponent<Rigidbody>();
                 rb.AddForce(transform.forward * 0.03f, ForceMode.Impulse);
 
@@ -118,6 +112,7 @@ public class AIRanged : MonoBehaviour
     }
     private void ResetAttack()
     {
+        gameObject.GetComponent<Animator>().SetBool("Shoot", false);
         if (!gameObject.GetComponent<Animator>().GetBool("Dead") && player.GetComponent<DamageDetector>().hp > 0)
             alreadyAttacked = false;
     }

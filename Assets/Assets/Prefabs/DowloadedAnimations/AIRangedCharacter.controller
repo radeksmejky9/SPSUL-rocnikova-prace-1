@@ -559,8 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a422e7f805f94824cb8b9fba23b2c4d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ListAbilityData:
-  - {fileID: 11400000, guid: 9505a246f50bc7c41915cc1d7ef8c52c, type: 2}
+  ListAbilityData: []
 --- !u!114 &-720473053405440007
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -607,7 +606,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RangedCharacterAnimationControl
+  m_Name: AIRangedCharacter
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Run
