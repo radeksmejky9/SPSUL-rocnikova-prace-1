@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E07FDC76-1952-CC8C-D655-9840A0B3F401}</ProjectGuid>
+    <ProjectGuid>{A5079329-6786-0AFD-C438-19927C18B6A6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -85,7 +85,6 @@
     <Compile Include="Assets\ScriptsForScriptableObjects\Shoot.cs" />
     <Compile Include="Assets\Scripts\AIRanged.cs" />
     <Compile Include="Assets\Scripts\DamageDetector.cs" />
-    <Compile Include="Assets\Cold War Weapons\AK74M\Demo\CameraRotate.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -93,6 +92,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\Modern Russian Assault Rifle\Notes.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -648,111 +648,111 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.RenderPipeline.Universal.ShaderLibrary.csproj">
-      <Project>{49D84B51-CC22-DBF2-643D-E85D83E745C6}</Project>
+      <Project>{DCFC24CD-C629-F62C-F265-99675F20A9C7}</Project>
       <Name>Unity.RenderPipeline.Universal.ShaderLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{40AED243-949D-5108-8A19-AC1A887A5BDE}</Project>
+      <Project>{0AACFE8C-3946-086F-7C28-842D35329959}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Cinemachine.csproj">
-      <Project>{10DF2685-BB9E-D7B6-D2C3-2A26DF107D69}</Project>
+      <Project>{8DDD1DF5-E2EF-8EB4-B582-F97AAC4D827F}</Project>
       <Name>Cinemachine</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
-      <Project>{48E72814-510E-005D-8E91-5402EE476D9B}</Project>
+      <Project>{A16D5924-EE35-BB59-8913-1A22519EEC37}</Project>
       <Name>NavMeshComponentsExamplesEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Shaders.csproj">
-      <Project>{4D305B29-8EE6-9813-7C3D-3CC47880EE3E}</Project>
+      <Project>{4688A3D0-1813-85C3-ACCF-09E288B5FF39}</Project>
       <Name>Unity.RenderPipelines.Universal.Shaders</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{340A0164-F4A6-78AD-61EA-3FA692661BBD}</Project>
+      <Project>{C84713A9-264E-0B2F-5BAA-7B2D9CE01E45}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Editor.csproj">
-      <Project>{0D79633B-E99D-2FBB-FD0C-6366459CE9F0}</Project>
+      <Project>{F3AFC080-ABED-C341-F1FA-3857CDCF9AB6}</Project>
       <Name>Unity.RenderPipelines.Core.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj">
-      <Project>{75D017A1-7E4A-ACDF-FB97-8790A17E4EB1}</Project>
+      <Project>{48C744A8-8A0E-10B5-8033-8696E50BDF86}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{B1E8F282-C457-8E68-36A4-FB1B76C2D5D4}</Project>
+      <Project>{4D1D1D18-8DEB-5D6A-75C7-3C2EB286F5C2}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{73437395-9FDA-F3B2-A392-D1FB2218AD35}</Project>
+      <Project>{246B4A5E-D370-729C-E2F2-45988BF6ADB7}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Runtime.csproj">
-      <Project>{E697189F-0691-29B8-F0F3-6C4E9FFF8780}</Project>
+      <Project>{29692F46-52F1-DDA7-22EB-3FD7350796B0}</Project>
       <Name>Unity.RenderPipelines.Universal.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Editor.csproj">
-      <Project>{0420F3D3-EAE6-9845-4B40-2B67DFE951EC}</Project>
+      <Project>{13826B1F-944E-9299-09BA-31A3D027A9A0}</Project>
       <Name>Unity.RenderPipelines.Universal.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{E4DF8312-2013-E8F7-2186-2AF71764C5F3}</Project>
+      <Project>{0CA79DF2-9752-7C7A-F043-BFF0ADA7EB9F}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Searcher.Editor.csproj">
-      <Project>{CBD56B10-7C8B-5D1E-8F9D-C6F5DFD6DFDF}</Project>
+      <Project>{F851A065-5D17-C14C-EFF2-EC29398FE3C4}</Project>
       <Name>Unity.Searcher.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{8C34907B-7931-F45D-53BA-70EEDC3DC7C4}</Project>
+      <Project>{BA8630C1-089D-575F-06F5-4056F40A5EAF}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
-      <Project>{093FD8BE-C3F4-75B4-0F6F-1C627B3944A5}</Project>
+      <Project>{25DBC312-1924-1B08-773C-ED02B760E37E}</Project>
       <Name>Unity.Postprocessing.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{9B2F4E17-64B9-E28B-23C4-0FD1589674C5}</Project>
+      <Project>{8E1F64D7-65AA-2EE6-65D2-0B37B5A8A6EA}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamples.csproj">
-      <Project>{44961B8F-CCE4-B57E-57EF-9B7A2357FE7B}</Project>
+      <Project>{5BC7440B-0D93-81F9-E772-F6EA2ADD4490}</Project>
       <Name>NavMeshComponentsExamples</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{ACFC80B1-DB0A-B482-9116-518934059960}</Project>
+      <Project>{0816EDE3-57B5-12C9-7451-6B55DBB796F6}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.csproj">
-      <Project>{952C7878-3F5E-A6D6-ED9B-BC45B25D585C}</Project>
+      <Project>{BC5740C5-C2A0-05B1-69DD-BFE8A28E714E}</Project>
       <Name>Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
-      <Project>{2A1C2BC8-4B6A-75FE-9627-6E16C5C720B3}</Project>
+      <Project>{2F9AFC23-6B93-F68A-44AC-17CCBF2EC904}</Project>
       <Name>Unity.Postprocessing.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{8B571E71-6226-A246-BB9D-D8137D3A50A1}</Project>
+      <Project>{322EF159-C6E7-A7BD-5D01-8C8F07847854}</Project>
       <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{0E89A5D7-2D49-0BC1-8CD4-FA30E2888E8B}</Project>
+      <Project>{AC070C9D-DF3B-CE1B-03A5-758D2B93D7D6}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ShaderGraph.Editor.csproj">
-      <Project>{7F3B21FA-B62A-77DB-A498-F8E2B2B7BE0E}</Project>
+      <Project>{4F599E6A-7956-EBDE-688D-D2379C2CC15D}</Project>
       <Name>Unity.ShaderGraph.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.ShaderLibrary.csproj">
-      <Project>{4B5F6E4A-E684-7F69-278C-32440F381261}</Project>
+      <Project>{136C7685-EF8B-CB60-782B-4CAB3F15687B}</Project>
       <Name>Unity.RenderPipelines.Core.ShaderLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{AF2F87D4-9BAF-5394-EA5B-C492C7200085}</Project>
+      <Project>{94A1D1D4-E7AE-4095-EF3B-57BC7756D550}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{BE589E12-D357-156E-C2B0-3F2BF432BFD1}</Project>
+      <Project>{A5CB7AC9-3D0D-AD68-5417-7B878A99B109}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
   </ItemGroup>
