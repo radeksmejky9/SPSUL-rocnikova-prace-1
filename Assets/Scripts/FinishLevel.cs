@@ -7,7 +7,6 @@ public class FinishLevel : MonoBehaviour
     public GameObject Player;
     private void OnTriggerEnter(Collider other)
     {
-        Player.transform.position = teleportTarget.transform.position;
         SceneManager.LoadScene(0);
     }
 }

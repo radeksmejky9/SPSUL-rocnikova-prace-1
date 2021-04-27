@@ -85,6 +85,7 @@
     <Compile Include="Assets\ScriptsForScriptableObjects\Shoot.cs" />
     <Compile Include="Assets\Scripts\AIRanged.cs" />
     <Compile Include="Assets\Scripts\DamageDetector.cs" />
+    <Compile Include="Assets\Cold War Weapons\AK74M\Demo\CameraRotate.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
