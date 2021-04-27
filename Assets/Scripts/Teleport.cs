@@ -5,6 +5,8 @@ public class Teleport : MonoBehaviour
     public GameObject player;
     public GameObject checkpoint;
 
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.transform.root.gameObject == player)

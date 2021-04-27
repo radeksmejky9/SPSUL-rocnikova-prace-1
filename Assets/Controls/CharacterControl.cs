@@ -12,6 +12,8 @@ public class CharacterControl : MonoBehaviour
     public bool RunRight;
     public bool RunLeft;
     public bool Jump;
+    public bool Shift;
+    public bool Shoot;
 
     private Rigidbody rigid;
     public Rigidbody RIGID_BODY

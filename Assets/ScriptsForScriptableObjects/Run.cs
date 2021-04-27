@@ -22,7 +22,14 @@ public class Run : StateData
     {
 
         CharacterControl characterControl = characterState.GetCharacterControl(animator);
-
+        if (characterControl.Shoot)
+        {
+            animator.SetBool("Shoot", true);
+        }
+        if (!characterControl.Shift)
+        {
+            animator.SetBool("Shift", false);
+        }
         if (FrontCheck(characterControl))
         {
             animator.SetBool("Run", false);
@@ -42,6 +49,7 @@ public class Run : StateData
         {
             animator.SetBool("Jump", true);
         }
+
 
         if (characterControl.RunLeft)
         {

@@ -3,9 +3,11 @@
 public class Checkpoint : MonoBehaviour
 {
     public Teleport teleport;
-    public GameObject checkpoint;
+    public Material material;
+
     private void OnTriggerEnter(Collider other)
     {
-        teleport.checkpoint = this.checkpoint;
+        teleport.checkpoint = gameObject;
+        gameObject.GetComponent<MeshRenderer>().material = material;
     }
 }

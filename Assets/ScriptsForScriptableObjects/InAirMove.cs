@@ -21,7 +21,10 @@ public class InAirMove : StateData
     public override void UpdateAbility(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
     {
         CharacterControl characterControl = characterState.GetCharacterControl(animator);
-
+        if (characterControl.Shoot)
+        {
+            animator.SetBool("Shoot", true);
+        }
         if (characterControl.RunLeft)
         {
             characterControl.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
@@ -37,6 +40,15 @@ public class InAirMove : StateData
             {
                 characterControl.transform.Translate(Vector3.forward * Graph.Evaluate(stateInfo.normalizedTime) * Speed * Time.deltaTime);
             }
+        }
+
+        if (characterControl.Shift)
+        {
+            animator.SetBool("Shift", true);
+        }
+        else
+        {
+            animator.SetBool("Shift", false);
         }
 
 

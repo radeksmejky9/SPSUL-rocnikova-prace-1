@@ -39,6 +39,23 @@ public class Controls : MonoBehaviour
             }
         }
 
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            InputManager.Instance.Shift = true;
+        }
+        else
+        {
+            InputManager.Instance.Shift = false;
+        }
 
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            InputManager.Instance.Shoot = true;
+        }
+        else
+        {
+            InputManager.Instance.Shoot = false;
+        }
     }
 }
